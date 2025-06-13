@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(rgba(2,28,66,0.3), rgba(2,28,66,0.3)),
+    url('../../../../assets/rx-signup-back.jpeg') center/cover no-repeat fixed;
+  position: relative;
+}
+
+.signup-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding-right: 80px;
+}
+
+.signup-flow-container {
+  position: relative;
+  margin-top: 40px;
+  width: 450px;
+  min-height: 600px;
+  max-height: 600px;
+  margin-right: 300px;
+  padding: 4rem 2rem 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 8px 20px rgba(0, 0, 0, 0.2),
+    0 16px 40px rgba(0, 0, 0, 0.15),
+    0 0 2px rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.logo-container {
+  position: absolute;
+  top: -67px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  text-align: center;
+}
+
+.logo-img {
+  width: 150%;
+  height: 150%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.rxware-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  background: #3182ce;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #2b6cb0;
+}
+
+button:disabled {
+  background: #cbd5e0;
+  cursor: not-allowed;
+}
+
+.red-gradient-btn {
+  background: #00ff48 !important;
+  color: black !important;
+  border: none !important;
+}
+
+.red-gradient-btn:hover {
+  background: #00cc3a !important;
+}
+
+.error-message {
+  background: #fff5f5;
+  color: #e53e3e;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #e53e3e;
+}

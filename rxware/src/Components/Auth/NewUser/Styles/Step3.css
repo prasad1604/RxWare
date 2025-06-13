@@ -1,0 +1,32 @@
+.subdomain-preview {
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.preview-box {
+  padding: 0.75rem;
+  background: white;
+  border: 1px dashed #cbd5e0;
+  border-radius: 4px;
+  font-family: monospace;
+  margin: 0.5rem 0;
+}
+
+.availability-status {
+  font-size: 0.9rem;
+}
+
+.available {
+  color: #38a169;
+}
+
+.unavailable {
+  color: #e53e3e;
+}
+
+.rxware-green {
+  color: #00ff48;
+}

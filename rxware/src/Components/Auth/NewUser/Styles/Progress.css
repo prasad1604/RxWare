@@ -1,0 +1,102 @@
+.welcome-message {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  max-width: 500px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  white-space: nowrap; /* prevent wrapping */
+}
+
+.welcome-message h1 {
+  font-size: 2.8rem;   /* adjust as needed */
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.welcome-message p {
+  font-size: 1.8rem;   /* adjust as needed */
+  line-height: 1.3;
+  white-space: nowrap; /* keep on one line */
+}
+
+.container-welcome {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 1.5rem;
+  color: #2d3748;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.signup-progress {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.signup-progress::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #e0e0e0;
+  z-index: 1;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #384050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  border: 2px solid #e0e0e0;
+}
+
+.progress-step.active .step-number {
+  background: rgb(4,29,61);
+  color: white;
+}
+
+.progress-step.completed .step-number {
+  background: #38a169;
+  color: white;
+  border-color: #38a169;
+}
+
+.step-label {
+  font-size: 0.85rem;
+  color: #718096;
+}
+
+.progress-step.active .step-label,
+.progress-step.completed .step-label {
+  color: #2d3748;
+  font-weight: 500;
+}
+
+.form-step {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

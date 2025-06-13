@@ -1,0 +1,50 @@
+.step1-container {
+  display: flex;
+  justify-content: center;
+}
+
+.form-content-wrapper {
+  width: 80%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step1-container .form-group {
+  width: 100%;
+}
+
+.step1-container .form-group input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.step1-container .red-gradient-btn {
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.step1-container .step1-label {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.step1-label {
+  text-align: center;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #2d3748;
+  font-size: 1.5rem;
+}
+
+.email-input input {
+  background: white !important;
+}
+
+.email-input input::placeholder {
+  color: rgb(114, 113, 113);
+  opacity: 1;
+}
