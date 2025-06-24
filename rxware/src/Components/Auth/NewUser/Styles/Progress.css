@@ -1,7 +1,11 @@
-.welcome-message {
-  position: absolute;
+
+.welcome-message h1 {
+  font-size: 2.8rem;   /* adjust as needed */
+  margin-bottom: 1rem;
+  line-height: 1.1;
+   position: absolute;
   left: 20%;
-  top: 50%;
+  top: 40%;
   transform: translate(-50%, -50%);
   color: white;
   max-width: 500px;
@@ -10,16 +14,18 @@
   white-space: nowrap; /* prevent wrapping */
 }
 
-.welcome-message h1 {
-  font-size: 2.8rem;   /* adjust as needed */
-  margin-bottom: 1rem;
-  line-height: 1.1;
-}
-
 .welcome-message p {
+  position: absolute;
+  left: 27%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  max-width: 500px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  white-space: nowrap; /* prevent wrapping */
   font-size: 1.8rem;   /* adjust as needed */
-  line-height: 1.3;
-  white-space: nowrap; /* keep on one line */
+  line-height: 1.3; 
 }
 
 .container-welcome {

@@ -1,32 +1,115 @@
-.subdomain-preview {
-  background: #f7fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 4px;
-  padding: 1rem;
+/* Add these new styles */
+.name-group {
   margin-bottom: 1.5rem;
+  width: 100%;
 }
 
-.preview-box {
-  padding: 0.75rem;
-  background: white;
-  border: 1px dashed #cbd5e0;
-  border-radius: 4px;
-  font-family: monospace;
-  margin: 0.5rem 0;
+.name-row {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
 }
 
-.availability-status {
-  font-size: 0.9rem;
+.name-field {
+  flex: 1;
+  min-width: 0; /* Prevent overflow */
 }
 
-.available {
-  color: #38a169;
+.name-field input {
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.unavailable {
+.required-star {
   color: #e53e3e;
 }
 
-.rxware-green {
+.password-strength {
+  margin-top: 0.5rem;
+}
+
+.strength-meter {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 0.25rem;
+}
+
+.strength-section {
+  height: 4px;
+  flex: 1;
+  background-color: #e2e8f0;
+  border-radius: 2px;
+}
+
+.strength-section.active {
+  background-color: #e53e3e;
+}
+
+.strength-section.active.medium {
+  background-color: #d69e2e; /* Yellow-ochre */
+}
+
+.strength-section.active.strong {
+  background-color: #00ff48; /* RxWare green */
+}
+
+.strength-text {
+  font-size: 0.75rem;
+}
+
+.strength-text.invalid {
+  color: #e53e3e;
+}
+
+.strength-text.medium-text {
+  color: #d69e2e;
+}
+
+.strength-text.strong-text {
   color: #00ff48;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-input input {
+  width: 100%;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+.password-input .eye-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #718096;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.password-input input {
+  position: relative;
+  z-index: 1;
+}
+
+.password-input .eye-toggle:hover {
+  color: #2d3748;
+}
+
+.white-input {
+  background: white !important;
+  border: 1px solid #e2e8f0 !important;
+  padding: 0.75rem;
+  border-radius: 4px;
+  width: 100%;
 }

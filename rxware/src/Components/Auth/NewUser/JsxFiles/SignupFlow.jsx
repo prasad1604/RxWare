@@ -72,12 +72,12 @@ const SignupFlow = () => {
   };
 
   const handleDetailsSubmit = () => {
-    if (!signupData.fullName || signupData.fullName.trim().length < 2) {
-      setError('Please enter your full name');
+    if (!signupData.firstName || signupData.firstName.trim().length < 2) {
+      setError();
       return;
     }
     if (!signupData.password || signupData.password.length < 8) {
-      setError('Password must be at least 8 characters');
+      setError();
       return;
     }
     setStep(4);

@@ -9,7 +9,9 @@ export const SignupProvider = ({ children }) => {
       email: '',
       otp: '',
       otpToken: '',
-      fullName: '',
+      // Replace fullName with firstName and lastName
+      firstName: '',
+      lastName: '',
       password: '',
       showPassword: false,
       orgName: '',
@@ -28,7 +30,6 @@ export const SignupProvider = ({ children }) => {
       if (signupData.orgName && signupData.orgName.length > 2) {
         try {
           const subdomain = signupData.orgName.toLowerCase().replace(/\s+/g, '-');
-          // CORRECTED ENDPOINT: added '/auth' prefix
           const response = await api.get(`/auth/subdomain/check?name=${subdomain}`);
           setSignupData(prev => ({ 
             ...prev, 
